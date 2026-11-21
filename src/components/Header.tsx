@@ -12,18 +12,20 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-onyx-bg/95 backdrop-blur-sm border-b border-white/10 text-white">
-      <div className="max-w-7xl mx-auto px-page-margin h-24 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-page-margin h-24 grid grid-cols-2 md:grid-cols-3 items-center">
         {/* Official Brand Logo — Seamless Transparent Blend */}
-        <Link to="/" className="flex items-center group cursor-pointer">
-          <img
-            src="/images/logo.png"
-            alt="Scone Investment Group"
-            className="h-12 md:h-14 w-auto object-contain brightness-105 contrast-110 transition-transform duration-hover-transition group-hover:scale-[1.01]"
-          />
-        </Link>
+        <div className="flex items-center justify-start">
+          <Link to="/" className="flex items-center group cursor-pointer">
+            <img
+              src="/images/logo.png"
+              alt="Scone Investment Group"
+              className="h-12 md:h-14 w-auto object-contain brightness-105 contrast-110 transition-transform duration-hover-transition group-hover:scale-[1.01]"
+            />
+          </Link>
+        </div>
 
-        {/* Primary Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Primary Navigation">
+        {/* Primary Desktop Navigation Links — True Centred */}
+        <nav className="hidden md:flex items-center justify-center gap-8" aria-label="Primary Navigation">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -31,8 +33,8 @@ export const Header: React.FC = () => {
               end={link.end}
               className={({ isActive }) =>
                 isActive
-                  ? 'font-body text-body-md font-medium text-frosted-blue border-b-2 border-button-blue pb-0.5'
-                  : 'font-body text-body-md font-medium text-gray-300 hover:text-white transition-colors duration-hover-transition'
+                  ? 'font-body text-body-md font-medium text-frosted-blue border-b-2 border-button-blue pb-0.5 whitespace-nowrap'
+                  : 'font-body text-body-md font-medium text-gray-300 hover:text-white transition-colors duration-hover-transition whitespace-nowrap'
               }
             >
               {link.label}
@@ -41,7 +43,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Header Action & Mobile Toggle */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-end gap-4">
           <a
             href="#contact"
             className="inline-flex items-center justify-center px-5 py-2.5 rounded-DEFAULT bg-button-blue text-white font-body text-body-sm font-medium hover:bg-button-blue-hover transition-colors duration-hover-transition shadow-sm"
