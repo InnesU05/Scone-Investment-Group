@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               <img
                 src="/images/logo.png"
                 alt="Scone Investment Group"
-                className="h-10 w-auto object-contain rounded-sm"
+                className="h-12 w-auto object-contain brightness-105 contrast-110"
               />
             </div>
             <p className="font-body text-body-md text-gray-300 font-light mb-6 max-w-sm">
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Direct Contact Form Box (Solid Burgundy Dark Container) */}
+          {/* Direct Contact Form Box (Deep Navy Surface Container) */}
           <div className="lg:col-span-4 bg-burgundy-dark p-6 rounded-md border border-white/10">
             <h4 className="font-body text-body-md font-semibold text-white mb-2">
               Lorem Ipsum Briefing

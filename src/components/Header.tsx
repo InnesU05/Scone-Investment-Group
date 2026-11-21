@@ -11,14 +11,14 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-onyx-bg border-b border-white/10 text-white">
-      <div className="max-w-7xl mx-auto px-page-margin h-20 flex items-center justify-between">
-        {/* Official Brand Logo */}
+    <header className="sticky top-0 z-50 bg-onyx-bg/95 backdrop-blur-sm border-b border-white/10 text-white">
+      <div className="max-w-7xl mx-auto px-page-margin h-24 flex items-center justify-between">
+        {/* Official Brand Logo — Seamless Transparent Blend */}
         <Link to="/" className="flex items-center group cursor-pointer">
           <img
             src="/images/logo.png"
             alt="Scone Investment Group"
-            className="h-10 md:h-12 w-auto object-contain rounded-sm"
+            className="h-12 md:h-14 w-auto object-contain brightness-105 contrast-110 transition-transform duration-hover-transition group-hover:scale-[1.01]"
           />
         </Link>
 

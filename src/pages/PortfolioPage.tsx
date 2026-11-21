@@ -93,22 +93,19 @@ export const PortfolioPage: React.FC = () => {
         />
         {/* Gradient overlays strictly over background photo */}
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-bg via-onyx-bg/85 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-dark-raspberry/75 via-onyx-bg/40 to-dark-cyan/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-button-blue-hover/70 via-onyx-bg/40 to-burgundy-surface/65 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-onyx-bg/30 via-transparent to-onyx-bg" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-page-margin py-20 w-full">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-onyx-card border border-white/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-frosted-blue" />
-              <span className="font-label text-label-md uppercase text-frosted-blue">
-                Scone Investment Group
-              </span>
-            </div>
+            <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-4">
+              Scone Investment Group
+            </span>
             <h1 className="font-display text-display-2xl text-white mb-6 text-balance">
               Portfolio
             </h1>
             <p className="font-body text-body-lg text-gray-200 mb-8 max-w-xl text-pretty font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -123,13 +120,13 @@ export const PortfolioPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 2: Allocation Breakdown & Asset Showcase (Solid Background: Burgundy Dark) */}
+      {/* Slide 2: Allocation Breakdown & Asset Showcase (Solid Background: Deep Navy) */}
       <section className="py-20 bg-burgundy-dark text-white border-y border-white/10">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-white/10">
             <div>
               <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-2">
-                Portfolio
+                Allocation
               </span>
               <h2 className="font-display text-headline-lg text-white">
                 Lorem Ipsum Holdings Breakdown
@@ -148,7 +145,7 @@ export const PortfolioPage: React.FC = () => {
             </div>
           </div>
 
-          {/* 3 Feature Highlight Cards (Solid Onyx Card Containers) */}
+          {/* 3 Feature Highlight Cards (Solid Navy Card Containers) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {flagshipHoldings.map((item) => (
               <div
@@ -211,7 +208,7 @@ export const PortfolioPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 3: Detailed Portfolio Holdings Ledger (Solid Background: Onyx Black) */}
+      {/* Slide 3: Detailed Portfolio Holdings Ledger (Solid Background: Midnight Navy) */}
       <section id="holdings" className="py-20 bg-onyx-bg text-white">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
@@ -228,7 +225,7 @@ export const PortfolioPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Ledger Table (Solid Onyx & Burgundy Block Rows) */}
+          {/* Ledger Table (Solid Navy Block Rows) */}
           <div className="overflow-x-auto rounded-DEFAULT border border-white/10 bg-onyx-card shadow-lg">
             <table className="w-full text-left border-collapse">
               <thead>

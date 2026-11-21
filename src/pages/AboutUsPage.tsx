@@ -69,22 +69,19 @@ export const AboutUsPage: React.FC = () => {
         />
         {/* Gradient overlays strictly over background image */}
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-bg via-onyx-bg/85 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-dark-raspberry/70 via-transparent to-dark-cyan/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-button-blue-hover/65 via-transparent to-burgundy-surface/65 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-onyx-bg/40 via-transparent to-onyx-bg" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-page-margin py-24 w-full">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-onyx-card border border-white/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-frosted-blue" />
-              <span className="font-label text-label-md uppercase text-frosted-blue">
-                About Us — Scone Investment Group
-              </span>
-            </div>
+            <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-4">
+              Scone Investment Group
+            </span>
             <h1 className="font-display text-display-2xl text-white mb-6 text-balance">
               About Us
             </h1>
             <p className="font-body text-body-lg text-gray-200 mb-8 max-w-xl text-pretty font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -107,7 +104,7 @@ export const AboutUsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Key Metrics Ribbon (Solid Block Background: Burgundy Dark) */}
+      {/* Key Metrics Ribbon (Solid Deep Navy Background) */}
       <section className="bg-burgundy-dark border-y border-white/10 py-8">
         <div className="max-w-7xl mx-auto px-page-margin grid grid-cols-2 md:grid-cols-4 gap-8">
           {metrics.map((item) => (
@@ -123,13 +120,13 @@ export const AboutUsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 2: Strategic Mandate & Governance (Solid Dark Burgundy Background) */}
+      {/* Slide 2: Strategic Mandate & Governance (Solid Deep Navy Background) */}
       <section id="mandate" className="py-24 bg-burgundy-dark text-white">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-6">
               <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-3">
-                About Us
+                Overview
               </span>
               <h2 className="font-display text-display-xl text-white mb-6 text-balance">
                 Lorem Ipsum Dolor Sit Amet Consectetur.
@@ -143,7 +140,7 @@ export const AboutUsPage: React.FC = () => {
                 </p>
               </div>
 
-              {/* Pillars (Solid Onyx Card Blocks) */}
+              {/* Pillars (Solid Navy Card Blocks) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 pt-8 border-t border-white/10">
                 {pillars.map((pillar) => (
                   <div
@@ -166,7 +163,7 @@ export const AboutUsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Feature Box (Solid Block Color: Onyx Card) */}
+            {/* Feature Box (Solid Block Color: Deep Card Navy) */}
             <div className="lg:col-span-6">
               <div className="rounded-lg overflow-hidden border border-white/10 shadow-xl bg-onyx-card p-8">
                 <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
@@ -227,7 +224,7 @@ export const AboutUsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 3: Executive Principles (Solid Block Background: Onyx Black) */}
+      {/* Slide 3: Executive Principles (Solid Block Background: Midnight Navy) */}
       <section className="py-24 bg-onyx-bg text-white">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center gap-3">

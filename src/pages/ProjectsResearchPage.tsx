@@ -62,22 +62,19 @@ export const ProjectsResearchPage: React.FC = () => {
         />
         {/* Gradient overlays strictly over background photo */}
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-bg via-onyx-bg/90 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-dark-cyan/70 via-transparent to-dark-raspberry/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-burgundy-surface/70 via-transparent to-button-blue-hover/60 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-onyx-bg/40 via-transparent to-onyx-bg" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-page-margin py-20 w-full">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-onyx-card border border-white/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-frosted-blue" />
-              <span className="font-label text-label-md uppercase text-frosted-blue">
-                Scone Investment Group
-              </span>
-            </div>
+            <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-4">
+              Scone Investment Group
+            </span>
             <h1 className="font-display text-display-2xl text-white mb-6 text-balance">
               Projects &amp; Research
             </h1>
             <p className="font-body text-body-lg text-gray-200 mb-8 max-w-xl text-pretty font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -92,13 +89,13 @@ export const ProjectsResearchPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 2: Research Memorandums (Solid Background: Burgundy Dark) */}
+      {/* Slide 2: Research Memorandums (Solid Background: Deep Navy) */}
       <section id="active-research" className="py-20 bg-burgundy-dark text-white">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-white/10">
             <div>
               <span className="font-label text-label-md uppercase text-frosted-blue font-semibold block mb-2">
-                Projects &amp; Research
+                Publications
               </span>
               <h2 className="font-display text-headline-lg text-white text-balance">
                 Lorem Ipsum Publications &amp; Theses
@@ -109,7 +106,7 @@ export const ProjectsResearchPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Research Grid (Solid Onyx Card Containers) */}
+          {/* Research Grid (Solid Navy Card Containers) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whitepapers.map((paper) => (
               <article
@@ -146,7 +143,7 @@ export const ProjectsResearchPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Slide 3: Active Project Underwriting Pipeline (Solid Background: Onyx Black) */}
+      {/* Slide 3: Active Project Underwriting Pipeline (Solid Background: Midnight Navy) */}
       <section className="py-20 bg-onyx-bg text-white border-t border-white/10">
         <div className="max-w-7xl mx-auto px-page-margin">
           <div className="mb-10">
